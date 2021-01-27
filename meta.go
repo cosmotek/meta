@@ -1,6 +1,10 @@
 package meta
 
-import "database/sql/driver"
+import (
+	"database/sql/driver"
+	"encoding/json"
+	"errors"
+)
 
 type JSONMeta map[string]string
 
