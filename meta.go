@@ -1,5 +1,7 @@
 package meta
 
+import "database/sql/driver"
+
 type JSONMeta map[string]string
 
 func (a JSONMeta) Value() (driver.Value, error) {
